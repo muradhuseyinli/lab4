@@ -1,0 +1,167 @@
+body {
+    font-size: 20px;
+    background-image: linear-gradient(
+      to right,
+      rgb(180, 42, 65),
+      rgb(150, 50, 170)
+    );
+  }
+  
+  #menu-list {
+    display: inline-block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 25px;
+  }
+  .menu {
+    justify-content: space-between;
+  }
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 265px;
+    text-align: center;
+    border: 2px solid #ffc600;
+    background-color: #ffc600;
+  }
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .container {
+    display: grid;
+    grid-gap: 20px;
+  }
+  .column1 {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-columns: 10px 10px 10px;
+  }
+  .header {
+    background-color: white;
+    height: 400px;
+    padding: 50px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 2px solid white;
+    width: 900px;
+  }
+  .header h1,
+  p {
+    border: 2px solid #ffc600;
+    background-color: #ffc600;
+  }
+  .header p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .cta {
+    display: block;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 163px;
+  }
+  
+  .cta1,
+  .cta2 {
+    border: 2px solid #ffc600;
+    width: 400px;
+    height: 220px;
+    background-color: #ffc600;
+  }
+  .cta1 {
+    margin-bottom: 55px;
+  }
+  
+  .price {
+    font-size: 60px;
+    font-weight: 300;
+  }
+  .cta #title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .cta p {
+    margin: 0;
+  }
+
+  .features {
+    display: flex;
+    margin-top: 50px;
+  }
+  .feature {
+    width: 325px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: white;
+    margin-left: 40px;
+  }
+  .yummy_taco {
+    width: 20px;
+    margin: 100px 70px;
+  }
+  
+  .about p,
+  h2,
+  button {
+    width: 300px;
+    margin-left: 100px;
+  }
+  .feature .icon {
+    font-size: 70px;
+  }
+  
+  .about {
+    height: 330px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 15px;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-columns: 10px 10px 10px;
+    border: 2px solid white;
+    background-color: white;
+  }
+  button {
+    width: 150px;
+    height: 40px;
+    background-color: yellow;
+    border: 2px solid yellow;
+  }
+
+  :root {
+    --yellow: #ffc600;
+    --direction: right;
+  }
+  .image1 .gallery2 {
+    display: flex;
+  }
+  .images img {
+    width: 17%;
+    height: auto;
+    margin: 10px 20px;
+  }
+  .images h2 {
+    text-align: center;
+  }
+  .images h2:before,
+  .images h2:after {
+    display: block;
+    content: "";
+    height: 10px;
+    background: linear-gradient(
+      to var(--direction, left),
+      var(--yellow),
+      transparent
+    );
+  }
+  .images h2:after {
+    --direction: right;
+  }
